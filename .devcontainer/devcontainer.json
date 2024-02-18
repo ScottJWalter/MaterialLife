@@ -17,11 +17,8 @@
 			"antVersion": "latest",
 			"groovyVersion": "latest"
 		},
-		"ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {
-			"version": "latest",
-			"jdkVersion": "latest",
-			"jdkDistro": "ms"
-		}
+		"ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {},
+		"ghcr.io/tailscale/codespace/tailscale": {}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
