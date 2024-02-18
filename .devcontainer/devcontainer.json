@@ -6,6 +6,7 @@
 	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
 	"runArgs": ["--device=/dev/net/tun"],
 	"features": {
+		"ghcr.io/tailscale/codespace": {},
 		"ghcr.io/devcontainers/features/java:1": {
 			"installGradle": true,
 			"installMaven": true,
