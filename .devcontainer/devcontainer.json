@@ -17,15 +17,14 @@
 			"antVersion": "latest",
 			"groovyVersion": "latest"
 		},
-		"ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {},
-		"ghcr.io/tailscale/codespace/tailscale": {}
+		"ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "echo \"This file was added by the postCreateCommand.\" > TEMP.md",
+	"postCreateCommand": "sudo apt update && sudo apt upgrade -y",
 
 	// Configure tool-specific properties.
 	"customizations": {
