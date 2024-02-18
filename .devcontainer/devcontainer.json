@@ -6,7 +6,6 @@
 	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
 	"runArgs": ["--device=/dev/net/tun"],
 	"features": {
-		"ghcr.io/tailscale/codespace": {},
 		"ghcr.io/devcontainers/features/java:1": {
 			"installGradle": true,
 			"installMaven": true,
@@ -18,6 +17,7 @@
 			"antVersion": "latest",
 			"groovyVersion": "latest"
 		},
+		"ghcr.io/tailscale/codespace": {},
 		"ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {}
 	},
 
@@ -25,7 +25,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo apt update && sudo apt upgrade -y",
+	"postCreateCommand": "sudo apt update && sudo apt upgrade -y && sudo tailscale up --accept-routes",
 
 	// Configure tool-specific properties.
 	"customizations": {
