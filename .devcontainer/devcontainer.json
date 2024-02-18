@@ -4,7 +4,7 @@
 	"name": "Java 21 + Maven + Gradle",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
-
+	"runArgs": ["--device=/dev/net/tun"],
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
 			"installGradle": true,
